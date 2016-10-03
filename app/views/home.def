@@ -1,0 +1,26 @@
+{{##def.aboveContent :
+<div class="jumbotron text-center">
+  <h1>{{= it.homeMessage }}</h1>
+  <p><img src="/images/doT-js-100@2x.png" alt="doT"></p>
+  <p><a class="btn btn-primary btn-lg" href="http://olado.github.io/doT/index.html" role="button" target="_blank">doT.js documentation</a></p>
+</div>
+#}}
+
+{{##def.content:
+  <div class="row">
+    <div class="col-xs-12">
+        <p>This is a barebones node.js site template using doT.js and bootstrap.</p>
+        <p>There are four content sections in the layout.def where you can place content.
+          <ol>
+            <li><strong>aboveContent</strong> where you can put elements that are not in a bootstrap "container" and can span the whole screen width</li>
+            <li><strong>content</strong> which is inside a container, where you put the main content for the page</li>
+            <li><strong>belowContent</strong> like "aboveContent" you can place full-width content. It appears below the "content" section</li>
+            <li><strong>scripts</strong> the last section of the layout, located just before the end body tag, so you can include any scripts that are unique to a page. Global scripts (like jQuery, Angular, etc) can go in the layout.def above the scripts section.</li>
+          </ol>
+          </p>
+        <p><a href="/some-page/">This page</a> shows how to pass data from the controller and loop through it.</p>
+    </div>
+  </div>
+#}}
+
+{{#def.include('layout')}}

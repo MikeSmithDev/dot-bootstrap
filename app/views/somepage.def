@@ -1,0 +1,24 @@
+
+{{##def.content:
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Test Loop</h1>
+      <p>Here we test out looping through data that is passed from the controller in index.js. This works with database data as well.</p>
+      {{~it.usefulData :value:index}}
+        <div class="row">
+            <div class="col-xs-4 col-sm-3">
+              {{= value.color}}
+            </div>
+            <div class="col-xs-8 col-sm-9">
+                <p style='background-color:{{=value.hexValue}};padding:5px;color:#fff;'>Test</p>
+            </div>
+        </div> 
+      {{~}}
+    </div>
+  </div>
+
+
+
+#}}
+
+{{#def.include('layout')}}
