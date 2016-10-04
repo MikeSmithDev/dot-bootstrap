@@ -39,9 +39,9 @@ app.use(function(err, req, res, next){
   }
 });
 
-
 app.get('/', index.home);
 app.get('/some-page/', index.somepage);
+/* Add your other routes here */
 
 app.use(function(req, res, next){
   res.status(404);
@@ -51,7 +51,6 @@ app.use(function(req, res, next){
     res.render('404', { url: req.url, title: '404: This page doesn\'t exist' });
     return;
   }
-
 });
 
 var port = process.env.PORT || 5250;

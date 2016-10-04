@@ -5,15 +5,10 @@
     <div class="col-xs-8">
       <h1>Well,</h1>
       <h3>that doesn't look right.</h3>
-      
      </div>
     </section>
-
   </div>
 #}}
 
-{{##def.scripts:
-  
-#}}
 
 {{#def.include('layout')}}

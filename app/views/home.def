@@ -23,4 +23,17 @@
   </div>
 #}}
 
+{{##def.belowContent :
+  <hr>
+  <p>Just stuck some other content here as an example.</p>
+#}}
+
+
+{{##def.scripts :
+<script>
+  console.log('scripts would go here. This renders underneath the jQuery declaration so you can use jQuery.')
+</script>
+#}}
+
+
 {{#def.include('layout')}}
