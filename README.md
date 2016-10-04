@@ -85,3 +85,7 @@ Static files like images, style sheets, and javascript are stored in the `public
 ## Authentication?
 
 Databases and authentication aren't covered in this template, for simplicity. If there is interest, I'll upload a new project that includes PostgreSQL and authentication.
+
+## Hosting?
+
+You can setup a free hobby site on [Heroku](https://www.heroku.com/) and manage deployments with git. It's very easy to upgrade the site when it's ready for production, as well as add databases, logging, and other important modules.
